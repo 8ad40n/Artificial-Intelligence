@@ -1,3 +1,4 @@
+#...
 print("Hello World")
 name="Badhon Nath Joy"
 age= 22
@@ -6,6 +7,7 @@ is_adult= True
 print("Name: ",name)
 print("Age: ",age)
 print("Adult: ",is_adult)
+
 
 name1= input("Enter your name: ")
 print ("Hello",name1)
