@@ -9,7 +9,7 @@ m2 = [
     [7, 8, 9]
 ]
 
-if len(m1) != len(m2) or len(m1[0]) != len(m2[0]):
+if len(m1) != len(m2):
     print("")
 else:
     result= [[0 for _ in range(len(m1[0]))] for _ in range(len(m1))]

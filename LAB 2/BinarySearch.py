@@ -12,7 +12,7 @@ def binary_search(arr, item, n):
   return -1
 
 arr = [4, 10, 15, 30, 40]
-item = 10
+item = 15
 n = len(arr)
 arr.sort()
 result = binary_search(arr, item, n)
@@ -20,3 +20,4 @@ if result != -1:
   print("The element is found at index ",result)
 else:
   print("The element is not found in the array.")
+

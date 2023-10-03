@@ -4,7 +4,7 @@ def fibo(n):
     else:
         return fibo(n-1)+fibo(n-2)
     
-n=10
-for i in range(n):
+
+for i in range(10):
     print(fibo(i))
     
