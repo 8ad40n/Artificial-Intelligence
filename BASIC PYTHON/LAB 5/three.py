@@ -10,3 +10,4 @@ n = 20
 for i in range(n):
     number = houseNo(i)
     print(f"House {i+1}: {number}")
+
