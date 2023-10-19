@@ -1,32 +1,16 @@
-def distribute_products(products):
-    shelves = [[] for _ in range(5)]  # Create 5 shelves
+def bubble_sort(products):
+    n = len(products)
+    for i in range(n - 1):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if products[j][1] > products[j + 1][1]:
+                products[j], products[j + 1] = products[j + 1], products[j]
+                swapped = True
+        if not swapped:
+            break
 
-    for product in products:
-      if product[1] <= 20:
-        shelves[0].append(product)
-      elif product[1] <= 40:
-        shelves[1].append(product)
-      elif product[1] <= 60:
-        shelves[2].append(product)
-      elif product[1] <= 80:
-        shelves[3].append(product)
-      else:
-        shelves[4].append(product)
+products = [("Product A", 25), ("Product B", 15), ("Product C", 30), ("Product D", 10)]
+bubble_sort(products)
 
-    return shelves
-
-
-def display_shelves(shelves):
-  for i, shelf in enumerate(shelves):
-    print(f"Shelf {i + 1}:")
-    for product in shelf:
-      print(f"Product: {product[0]}, Price: {product[1]}")
-    print("-" * 30)
-
-
-if __name__ == "__main__":
-  products = [("Dairy Milk", 50), ("Kitkat", 75), ("Ice cream", 60), ("Mountain Dew", 20)]
-
-  shelves = distribute_products(products)
-  display_shelves(shelves)
- 
+for product in products:
+    print(f"{product[0]} - ${product[1]}")
