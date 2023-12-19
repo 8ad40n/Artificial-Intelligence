@@ -8,7 +8,7 @@ def minimax(depth, nodeIndex, maximizingPlayer, values, alpha, beta):
 
 	if maximizingPlayer: 
 	
-		best = MIN
+		best = MIN  
 
 
 		for i in range(0, 2): 
